@@ -13,3 +13,7 @@ git branch -M main
 git add .
 git commit -m "First commit"
 git remote add origin git@github.com:ArnaudAM/Cypress_Quest4.git
+
+## 3rd commands to install downloadfiles and using url
+npm install cypress-file-upload --save-dev
+npm install cypress-downloadfile --save-dev
