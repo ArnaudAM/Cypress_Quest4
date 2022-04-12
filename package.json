@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:run": "rimraf mochawesome-report cypress/results mochawesome.json && cypress run",
+    "generateReport": "npx mochawesome-merge 'cypress/results/*.json' > mochawesome.json && npx marge mochawesome.json",
+    "cy:run:report" : "npm run cy:run && npm run generateReport"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^9.5.3"
+    "cypress": "^9.5.3",
+    "run": "^1.4.0"
   },
   "devDependencies": {
     "cypress-downloadfile": "^1.2.1",
