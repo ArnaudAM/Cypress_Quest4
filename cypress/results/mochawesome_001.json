@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 3,
-    "tests": 4,
-    "passes": 4,
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2022-04-12T09:21:24.527Z",
-    "end": "2022-04-12T09:21:42.408Z",
-    "duration": 10756,
-    "testsRegistered": 4,
+    "start": "2022-04-12T09:21:31.585Z",
+    "end": "2022-04-12T09:21:36.375Z",
+    "duration": 4790,
+    "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -80,122 +80,6 @@
           "pending": [],
           "skipped": [],
           "duration": 4726,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "1fed7e71-db50-496d-81d5-e7016e533a2f",
-      "title": "",
-      "fullFile": "cypress/integration/uploadVerif.spec.js",
-      "file": "cypress/integration/uploadVerif.spec.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "62dbc0f1-482a-449b-a267-6d42933f16f4",
-          "title": "File upload and verify text",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Upload file and want to download but go back",
-              "fullTitle": "File upload and verify text Upload file and want to download but go back",
-              "timedOut": null,
-              "duration": 2393,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.get('#fileField').attachFile('FFVII_REMAKE.jpg');\ncy.get('.lead').should('contain', \"was created\");",
-              "err": {},
-              "uuid": "15377a18-cf6a-4c98-bcf1-468e6b766275",
-              "parentUUID": "62dbc0f1-482a-449b-a267-6d42933f16f4",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "15377a18-cf6a-4c98-bcf1-468e6b766275"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 2393,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "2fc13204-b340-4e4a-9974-fec50b20fa35",
-      "title": "",
-      "fullFile": "cypress/integration/deletedFile.spec.js",
-      "file": "cypress/integration/deletedFile.spec.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "e3081d64-e3ca-4a0c-a672-af940da7658d",
-          "title": "File upload and deleted",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Upload file and delete it",
-              "fullTitle": "File upload and deleted Upload file and delete it",
-              "timedOut": null,
-              "duration": 3637,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit(\"https://filebin.net/\");\ncy.get('#fileField').attachFile('FFVII_REMAKE.jpg');\ncy.get('[data-bs-toggle=\"dropdown\"]').click({\n  multiple: true\n});\ncy.get('[data-bs-target=\"#modalDeleteFile-0\"]').click();",
-              "err": {},
-              "uuid": "ea990805-e4bd-41f8-8c6f-9eed8326ae78",
-              "parentUUID": "e3081d64-e3ca-4a0c-a672-af940da7658d",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "ea990805-e4bd-41f8-8c6f-9eed8326ae78"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 3637,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
