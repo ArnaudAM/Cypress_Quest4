@@ -24,5 +24,8 @@ describe('File upload and download tests', () => {
             cy.readFile('mydownloads/tarFiles/downloadedFromCypress.tar')
         })
     })
-
+    it('Upload file and want to download but go back', () => {
+        cy.get('#fileField').attachFile('FFVII_REMAKE.jpg')
+        cy.get('[data-bs-dismiss="modal"]').click()
+    })
 })

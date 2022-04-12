@@ -22,3 +22,8 @@ npm install --save-dev cypress-downloadfile
 npx cypress open
 Then that create cypress folder and cypress.json
 
+## 4t commands to install reports and use it
+npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generator
+npx cypress run
+npx mochawesome-merge "cypress/results/*.json" > mochawesome.json
+npx marge mochawesome.json
