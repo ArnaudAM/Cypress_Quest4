@@ -1,10 +1,13 @@
 {
     "scripts": {
+        "cy:run": "rimraf mochawesome-report cypress/results mochawesome.json && cypress run",
+        "generateReport": "npx mochawesome-merge 'cypress/results/*.json' > mochawesome.json && npx marge mochawesome.json",
+        "cy:run:report" : "npm run cy:run && npm run generateReport",
         "delete-mochawesome-folder":"rm -f mochawesome-report/*.json",
         "e2e_mochawesome": "yarn cypress run --spec cypress/integration/Tests/*.js",
         "merge-json":"npx mochawesome-merge --reportDir mochawesome-report > mochawesome1.json",
         "html-generator": " npx mochawesome-report-generator mochawesome1.json"
-      },
+    },
     "baseUrl": "https://filebin.net/",
     "reporter": "mochawesome",
     "reporterOptions": {
