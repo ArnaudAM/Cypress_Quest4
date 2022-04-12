@@ -26,6 +26,6 @@ describe('File upload and download tests', () => {
     })
     it('Upload file and want to download but go back', () => {
         cy.get('#fileField').attachFile('FFVII_REMAKE.jpg')
-        cy.get('[data-bs-dismiss="modal"]').click()
+        cy.get('.lead').should('contain', "was created")
     })
 })
